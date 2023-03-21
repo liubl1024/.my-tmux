@@ -1,0 +1,7 @@
+pane	14	1	0	:-	1	liubinglin@lbl-MacBookPro:~	:/Users/liubinglin	1	zsh	:
+pane	14	2	1	:*	1	nvim txt	:/Users/liubinglin	1	nvim	:nvim txt
+pane	2	1	1	:*	1	liubinglin@lbl-MacBookPro:~	:/Users/liubinglin	1	zsh	:
+window	14	1	:zsh	0	:-	d964,80x24,0,0,25	:
+window	14	2	:nvim	1	:*	d875,108x31,0,0,26	:
+window	2	1	:zsh	1	:*	b260,80x24,0,0,3	:
+state	14	

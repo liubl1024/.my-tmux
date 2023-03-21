@@ -1,0 +1,8 @@
+pane	14	1	1	:*	1	nvim test.php	:/Users/liubinglin	1	nvim	:nvim test.php
+pane	14	1	1	:*	2	liubinglin@lbl-MacBookPro:~	:/Users/liubinglin	0	zsh	:
+pane	14	2	0	:-	1	liubinglin@lbl-MacBookPro:~	:/Users/liubinglin	1	zsh	:
+pane	2	1	1	:*	1	liubinglin@lbl-MacBookPro:~	:/Users/liubinglin	1	zsh	:
+window	14	1	:nvim	1	:*	be3b,141x37,0,0{71x37,0,0,25,69x37,72,0,27}	:
+window	14	2	:zsh	0	:-	d875,108x31,0,0,26	:
+window	2	1	:zsh	1	:*	b260,80x24,0,0,3	:
+state	14	

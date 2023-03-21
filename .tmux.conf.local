@@ -342,6 +342,17 @@ tmux_conf_copy_to_os_clipboard=true
 # start with mouse mode enabled
 set -g mouse on
 
+# 关闭响铃
+set-option -g bell-action none
+set-option -g visual-bell off
+
+
+set-window-option -g mode-keys vi
+bind-key -T copy-mode-vi 'v' send -X begin-selection
+bind-key -T copy-mode-vi 'y' send -X copy-selection
+unbind -T copy-mode-vi MouseDragEnd1Pane
+
+
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual
 #set -g status-keys vi
@@ -400,8 +411,19 @@ tmux_conf_uninstall_plugins_on_reload=true
 #set -g @plugin 'tmux-plugins/tmux-cpu'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
+
+#for navigating panes and vim/nvim with Ctrl-hjkl
+#set -g @plugin 'christoomey/vim-tmux-navigator'
+# to configure tmux theme
+#set -g @plugin 'jimeh/tmux-themepack'
+
+
+#  use this theme for tmux
+#set -g @themepack 'powerline/default/cyan'
+
 set -g @continuum-restore 'on'
 
+bind-key -n C-l if-shell "$is_vim" "send-keys C-l"  "send-keys C-l"
 
 # -- custom variables ----------------------------------------------------------
 
@@ -430,13 +452,4 @@ set -g @continuum-restore 'on'
 # "$@"
 # # /!\ do not remove the previous line
 
-# 关闭响铃
-set-option -g bell-action none
-set-option -g visual-bell off
-
-
-set-window-option -g mode-keys vi
-bind-key -T copy-mode-vi 'v' send -X begin-selection
-bind-key -T copy-mode-vi 'y' send -X copy-selection
-unbind -T copy-mode-vi MouseDragEnd1Pane
 
