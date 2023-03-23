@@ -1,3 +1,0 @@
-pane	0	1	1	:*	1	liubinglin@liubingindeMBP2:~	:/Users/liubinglin	1	zsh	:
-window	0	1	:zsh	1	:*	b73d,191x52,0,0,0	:
-state	0	
